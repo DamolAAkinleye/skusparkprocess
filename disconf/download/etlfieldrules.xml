@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<etl>
+    <field>
+        <key>brand</key>
+        <actions>
+            <action>remove-escapechar</action>
+            <action>case-insensitive</action>
+            <action>split-en</action>
+        </actions>
+        <values>
+            <value>Alexander Mcqueen/\u4e9a\u5386\u5c71\u5927\u9ea6\u6606</value>
+            <value>ARMANI COLLEZIONI</value>
+            <value>BALLY/\u5df4\u5229</value>
+            <value>Balmain/\u5df4\u5c14\u66fc</value>
+            <value>Berluti/\u4f2f\u5c14\u9c81\u5e1d</value>
+            <value>Bottega Veneta/\u8446\u8776\u5bb6</value>
+            <value>Brioni/\u5e03\u91cc\u5965\u5c3c</value>
+            <value>Brunello Cucinelli/\u5e03\u9c81\u8bfa\u5e93\u5947\u5229</value>
+            <value>Burberry/\u5df4\u5b9d\u8389</value>
+            <value>Calvin Klein Collection</value>
+            <value>CANALI/\u5361\u7eb3\u5229</value>
+            <value>Carol Christian Poell</value>
+            <value>Celine/\u601d\u7433</value>
+            <value>Chanel/\u9999\u5948\u513f</value>
+            <value>Chloe/\u5bc7\u4f9d</value>
+            <value>Comme des Garcons/\u5ddd\u4e45\u4fdd\u73b2</value>
+            <value>Diesel Black Gold/\u8fea\u8d5b\u9ed1\u91d1</value>
+            <value>Dior/\u8fea\u5965</value>
+            <value>Dolce &amp; Gabbana/\u675c\u5609\u73ed\u7eb3</value>
+            <value>Donna Karan/\u5510\u7eb3\u5361\u5170</value>
+            <value>Dsquared2/D\u4e8c\u6b21\u65b9</value>
+            <value>Dunhill/\u767b\u559c\u8def</value>
+            <value>Elie Saab/\u827e\u8389\u8428\u535a</value>
+            <value>Ermenegildo Zegna/\u6770\u5c3c\u4e9a</value>
+            <value>Fendi/\u82ac\u8fea</value>
+            <value>Ferragamo/\u83f2\u62c9\u683c\u6155</value>
+            <value>GERAY&amp;DONEY/\u683c\u96f7\u4e1c\u5c3c</value>
+            <value>Giorgio Armani/\u4e54\u6cbb\u963f\u739b\u5c3c</value>
+            <value>Givenchy/\u7eaa\u68b5\u5e0c</value>
+            <value>Gucci/\u53e4\u9a70</value>
+            <value>Haider Ackermann/\u6d77\u5fb7\u827e\u514b\u66fc</value>
+            <value>Hermes/\u7231\u9a6c\u4ed5</value>
+            <value>Issey Miyake/\u4e09\u5b85\u4e00\u751f</value>
+            <value>Jimmy Choo/\u5409\u7c73.\u5468</value>
+            <value>Lanvin/\u6d6a\u51e1</value>
+            <value>Loro Piana/\u8bfa\u60a0\u7fe9\u96c5</value>
+            <value>Louis Vuitton/\u8def\u6613\u5a01\u767b</value>
+            <value>Marc Jacobs/\u9a6c\u514b\u96c5\u5404\u5e03</value>
+            <value>Marni/\u739b\u5c3c</value>
+            <value>Missoni/\u7c73\u7d22\u5c3c</value>
+            <value>Miu Miu/\u7f2a\u7f2a</value>
+            <value>Moncler/\u8499\u514b\u83b1</value>
+            <value>PRADA/\u666e\u62c9\u8fbe</value>
+            <value>Ralph Lauren Purple Label/\u62c9\u592b\u52b3\u4f26\u7d2b\u6807</value>
+            <value>RELLECIGA/\u4fea\u4e1d\u5a05</value>
+            <value>Roberto Cavalli/\u7f57\u4f2f\u7279\u5361\u74e6\u5229</value>
+            <value>Saint Laurent/\u5723\u7f57\u5170</value>
+            <value>Tod's</value>
+            <value>Tom Ford/\u6c64\u59c6\u798f\u7279</value>
+            <value>Valentino/\u534e\u4f26\u5929\u5974</value>
+            <value>Verri/\u7ef4\u91cc</value>
+            <value>Versace/\u8303\u601d\u54f2</value>
+            <value>Yohji Yamamoto/\u5c71\u672c\u8000\u53f8</value>
+            <value>Rick Owens</value>
+            <value>3.1 PHILLIP LIM/\u83f2\u5229\u67973.1</value>
+            <value>A.P.C</value>
+            <value>Agnes.b</value>
+            <value>Anna Sui/\u5b89\u5a1c\u82cf</value>
+            <value>Armani Jeans</value>
+            <value>Burberry Brit</value>
+            <value>Cerutti 1881</value>
+            <value>Coach/\u853b\u9a70</value>
+            <value>Diesel/\u8fea\u8d5b</value>
+            <value>Dirk Bikkembergs</value>
+            <value>DKNY</value>
+            <value>Drome</value>
+            <value>Emporio Armani</value>
+            <value>Escada</value>
+            <value>Furla/\u8299\u62c9</value>
+            <value>Helmut Lang</value>
+            <value>Hugo Boss</value>
+            <value>Just Cavalli</value>
+            <value>K by Karl Lagerfeld</value>
+            <value>Karl Lagerfeld Chanel</value>
+            <value>Kate Spade</value>
+            <value>KENZO/\u9ad8\u7530\u8d24\u4e09</value>
+            <value>Longchamp/\u73d1\u9aa7</value>
+            <value>Moschino</value>
+            <value>Marc by Marc Jacobs</value>
+            <value>MCM</value>
+            <value>MCQ</value>
+            <value>Michael Kors/\u8fc8\u514b\u79d1\u5c14\u65af</value>
+            <value>MSGM</value>
+            <value>Paul Smith/\u4fdd\u7f57\u53f2\u5bc6\u65af</value>
+            <value>Pierre Balmain</value>
+            <value>PORTS/\u5b9d\u59ff</value>
+            <value>Ralph Lauren Black Label/\u62c9\u592b\u52b3\u4f26\u9ed1\u6807</value>
+            <value>Red Valentino</value>
+            <value>see by chloe</value>
+            <value>Sophia Webster</value>
+            <value>Sophie Anderson</value>
+            <value>Sophie Hulme</value>
+            <value>Tamara Mellon</value>
+            <value>Tory Burch/\u6c64\u4e3d\u67cf\u7426</value>
+            <value>Undercover</value>
+            <value>Verri/\u7ef4\u5229</value>
+            <value>Versace Collection</value>
+            <value>Versace Jeans Couture</value>
+            <value>Versus</value>
+            <value>Visvim</value>
+            <value>Vivien Westwood/\u897f\u592a\u540e</value>
+            <value>Y-3</value>
+            <value>Z Zegna</value>
+            <value>Zegna Sports</value>
+            <value>Mackage</value>
+            <value>SANDRO</value>
+            <value>A&amp;F</value>
+            <value>Armani exchange</value>
+            <value>Banana Republic</value>
+            <value>brooksbrothers</value>
+            <value>Calvin Klein</value>
+            <value>Calvin Klein Jeans</value>
+            <value>Fred Perry</value>
+            <value>French Connection</value>
+            <value>GANT</value>
+            <value>HAZZYS</value>
+            <value>J.Crew</value>
+            <value>JEEP</value>
+            <value>Lacoste</value>
+            <value>MO&amp;CO.</value>
+            <value>NAUTICA</value>
+            <value>POLO Ralph Lauren</value>
+            <value>Ralph Lauren/\u62c9\u592b\u52b3\u4f26</value>
+            <value>Scofield</value>
+            <value>theory</value>
+            <value>tommy hilfiger</value>
+            <value>love moschino</value>
+            <value>:CHOCOOLATE</value>
+            <value>5cm</value>
+            <value>American eagle</value>
+            <value>b+ab</value>
+            <value>basic house</value>
+            <value>Bershka</value>
+            <value>BOSIDENG/\u6ce2\u53f8\u767b</value>
+            <value>Cabbeen/\u5361\u5bbe</value>
+            <value>cartelo/\u5361\u5e1d\u4e50</value>
+            <value>CIAOPANIC</value>
+            <value>CROQUIS/\u901f\u5199</value>
+            <value>DANCING WOLVES/\u4e0e\u72fc\u5171\u821e</value>
+            <value>DUVETICA</value>
+            <value>EBLIN</value>
+            <value>ELAND</value>
+            <value>elle</value>
+            <value>ESPRIT</value>
+            <value>ETAM/\u827e\u683c</value>
+            <value>FAIRWHALE/\u9a6c\u514b\u534e\u83f2</value>
+            <value>FIRS/\u6749\u6749</value>
+            <value>FIVE PLUS</value>
+            <value>G2000</value>
+            <value>Giordano/\u4f50\u4e39\u5974</value>
+            <value>GIRDEAR</value>
+            <value>GOELIA/\u6b4c\u8389\u5a05</value>
+            <value>GOLDLION/\u91d1\u5229\u6765</value>
+            <value>GUESS</value>
+            <value>gxg</value>
+            <value>GXG</value>
+            <value>HELMUT LANG</value>
+            <value>hengyuanxiang/\u6052\u6e90\u7965</value>
+            <value>Hollister</value>
+            <value>HONDO/\u7ea2\u8c46</value>
+            <value>huashengji/\u82b1\u7b19\u8bb0</value>
+            <value>I'M DAVID</value>
+            <value>izzue</value>
+            <value>JackJones</value>
+            <value>Jason wood</value>
+            <value>jeanswest/\u771f\u7ef4\u65af</value>
+            <value>JNBY</value>
+            <value>JOMOO/\u4e5d\u7267\u738b</value>
+            <value>KAMA/\u5361\u739b</value>
+            <value>K-BOXING/\u52b2\u9738</value>
+            <value>La Chapelle</value>
+            <value>mango</value>
+            <value>Mind Bridge</value>
+            <value>montagut/\u68a6\u7279\u5a07</value>
+            <value>NANJIREN/\u5357\u6781\u4eba</value>
+            <value>NINEWEST</value>
+            <value>ochirly</value>
+            <value>ONLY</value>
+            <value>peacebird/\u592a\u5e73\u9e1f</value>
+            <value>PLORY</value>
+            <value>PRICH</value>
+            <value>pull&amp;bear</value>
+            <value>ROEM</value>
+            <value>ROMON/\u7f57\u8499</value>
+            <value>selected</value>
+            <value>SEPTWOLVES/\u4e03\u5339\u72fc</value>
+            <value>SEVEN/\u67d2\u724c</value>
+            <value>SOWN FLYING/\u96ea\u4e2d\u98de</value>
+            <value>spao</value>
+            <value>TEDELON/\u592a\u5b50\u9f99</value>
+            <value>Teenie weenie</value>
+            <value>TONLION/\u5510\u72ee</value>
+            <value>TRIES/\u624d\u5b50</value>
+            <value>vero moda</value>
+            <value>VICUTU</value>
+            <value>YALU/\u96c5\u9e7f</value>
+            <value>YAYA/\u9e2d\u9e2d</value>
+            <value>YISHION/\u4ee5\u7eaf</value>
+            <value>SLY</value>
+            <value>BALENO/\u73ed\u5c3c\u8def</value>
+            <value>LILANZ/\u5229\u90ce</value>
+            <value>broadcast/\u64ad</value>
+            <value>cheapmonday</value>
+            <value>\u4e03\u683c\u683c</value>
+            <value>\u4f18\u8863\u5e93</value>
+            <value>H&amp;M</value>
+            <value>ZARA</value>
+            <value>GAP</value>
+            <value>\u68ee\u9a6c</value>
+            <value>\u7f8e\u7279\u65af\u90a6\u5a01</value>
+            <value>TOPSHOP</value>
+            <value>COS</value>
+            <value>\u97e9\u90fd\u8863\u820d</value>
+            <value>MUJI</value>
+            <value>\u6d77\u6f9c\u4e4b\u5bb6</value>
+            <value>\u51e1\u5ba2</value>
+            <value>FOREVER21</value>
+            <value>OLD NAVY</value>
+            <value>ASOS</value>
+            <value>C&amp;A</value>
+            <value>GU</value>
+            <value>earthmusic</value>
+            <value>Ehyphen</value>
+            <value>honeys</value>
+            <value>WEGO</value>
+            <value>Cache-Cache</value>
+            <value>\u6f6e\u6d41\u524d\u7ebf</value>
+            <value>HOTWIND/\u70ed\u98ce</value>
+            <value>Decathlon/\u8fea\u5361\u4fac</value>
+            <value>G-STAR</value>
+            <value>EVISU</value>
+            <value>7 For All Mankind</value>
+            <value>A BATHING APE</value>
+            <value>Adriano Goldschmied</value>
+            <value>alpha</value>
+            <value>baby milo</value>
+            <value>BAPE</value>
+            <value>CDG play</value>
+            <value>Citizens of Humanity</value>
+            <value>CLOT</value>
+            <value>common projects</value>
+            <value>DL1961</value>
+            <value>EDWIN</value>
+            <value>energie</value>
+            <value>Fingercroxx</value>
+            <value>fragment design</value>
+            <value>GoodEnough</value>
+            <value>HIPANDA</value>
+            <value>hudson</value>
+            <value>HUPOT</value>
+            <value>J brand</value>
+            <value>lee</value>
+            <value>Levi's</value>
+            <value>Levi's Vintage Clothing</value>
+            <value>Mastermind</value>
+            <value>miss sixty</value>
+            <value>Major League Baseball</value>
+            <value>MOTHER</value>
+            <value>neighborhood</value>
+            <value>nudie</value>
+            <value>Paul frank</value>
+            <value>PRPS</value>
+            <value>quicksliver</value>
+            <value>R13</value>
+            <value>Rag&amp;Bone</value>
+            <value>replay</value>
+            <value>roxy</value>
+            <value>RRL</value>
+            <value>siwy</value>
+            <value>SOPHNET</value>
+            <value>Stussy</value>
+            <value>Superdry</value>
+            <value>supreme</value>
+            <value>texwood</value>
+            <value>Undercover</value>
+            <value>Undftd</value>
+            <value>Wrangler</value>
+            <value>wtaps</value>
+            <value>X-Large</value>
+            <value>Adidas/\u963f\u8fea\u8fbe\u65af</value>
+            <value>AIGLE</value>
+            <value>361\u00b0/\u4e09\u516d\u4e00\u5ea6</value>
+            <value>Air Jordan</value>
+            <value>ANTA/\u5b89\u8e0f</value>
+            <value>Arc'teryx/\u59cb\u7956\u9e1f</value>
+            <value>Arena/\u963f\u745e\u5a1c</value>
+            <value>Asics/\u4e9a\u745f\u58eb</value>
+            <value>Brooks/\u5e03\u9c81\u514b\u65af</value>
+            <value>Canada goose/\u52a0\u62ff\u5927\u9e45</value>
+            <value>CAT</value>
+            <value>champion/\u51a0\u519b</value>
+            <value>Columbia/\u54e5\u4f26\u6bd4\u4e9a</value>
+            <value>Converse/\u5321\u5a01</value>
+            <value>deerway/\u5fb7\u5c14\u60e0</value>
+            <value>ERKE/\u9e3f\u661f\u5c14\u514b</value>
+            <value>FILA/\u6590\u4e50</value>
+            <value>HEAD/\u6d77\u5fb7</value>
+            <value>Jack wolfskin/\u72fc\u722a</value>
+            <value>Kailas/\u5361\u4e50\u58eb</value>
+            <value>KAPPA/\u5361\u5e15</value>
+            <value>KOLON/\u53ef\u9686</value>
+            <value>Lafuma/\u4e50\u98de\u53f6</value>
+            <value>le coq sportif/\u6cd5\u56fd\u516c\u9e21</value>
+            <value>LINING/\u674e\u5b81</value>
+            <value>LOTTO/\u4e50\u9014</value>
+            <value>MAMMUT/\u731b\u72b8\u8c61</value>
+            <value>marmot/\u571f\u62e8\u9f20</value>
+            <value>Mcdavid/\u8fc8\u514b\u8fbe\u5a01</value>
+            <value>mizuno/\u7f8e\u6d25\u6d53</value>
+            <value>NEW BALANCE/\u7ebd\u5df4\u4f26</value>
+            <value>Nike/\u8010\u514b</value>
+            <value>Nikegolf/\u8010\u514b\u9ad8\u5c14\u592b</value>
+            <value>NORTHLAND/\u8bfa\u8bd7\u5170</value>
+            <value>OnitsukaTiger/\u9b3c\u51a2\u864e</value>
+            <value>OZARK/\u5965\u7d22\u5361</value>
+            <value>PEAK/\u5339\u514b</value>
+            <value>PONY/\u6ce2\u5c3c</value>
+            <value>Puma/\u5f6a\u9a6c</value>
+            <value>QIAODAN/\u4e54\u4e39</value>
+            <value>reebok/\u9510\u6b65</value>
+            <value>salomon/\u8428\u6d1b\u8499</value>
+            <value>saucony/\u7d22\u5eb7\u5c3c</value>
+            <value>Skechers/\u65af\u51ef\u5947</value>
+            <value>SKINS/\u601d\u91d1\u65af</value>
+            <value>Spalding/\u65af\u4f2f\u4e01</value>
+            <value>Speedo/\u901f\u6bd4\u6d9b</value>
+            <value>The north face/\u5317\u9762</value>
+            <value>Timberland/\u6dfb\u67cf\u5c9a</value>
+            <value>TOREAD/\u63a2\u8def\u8005</value>
+            <value>UMBRO/\u8335\u5b9d</value>
+            <value>UNDER ARMOUR/\u5b89\u5fb7\u739b</value>
+            <value>VANS/\u4e07\u65af</value>
+            <value>Wilson/\u5a01\u5c14\u80dc</value>
+            <value>XTEP/\u7279\u6b65</value>
+            <value>Yonex/\u5c24\u5c3c\u514b\u65af</value>
+            <value>Rapido/\u96f3\u9739\u9053</value>
+            <value>CAT/\u5361\u7279</value>
+            <value>RED WINGS/\u7ea2\u7ffc</value>
+            <value>DR.MARTENS/\u9a6c\u4e01</value>
+            <value>Timberland/\u6dfb\u67cf\u5c9a</value>
+            <value>UGG</value>
+            <value>Clarks/\u5176\u4e50</value>
+            <value>ECCO/\u7231\u6b65</value>
+            <value>hush puppies/\u6687\u6b65\u58eb</value>
+            <value>\u5965\u5eb7</value>
+            <value>\u610f\u5c14\u68ee</value>
+            <value>\u7ea2\u873b\u8713</value>
+            <value>CAMEL/\u9a86\u9a7c</value>
+            <value>\u56de\u529b</value>
+            <value>\u5bcc\u8d35\u9e1f</value>
+            <value>\u8fbe\u8299\u59ae</value>
+            <value>BELLE/\u767e\u4e3d</value>
+            <value>TATA/\u5979\u4ed6</value>
+            <value>\u5eb7\u5948</value>
+            <value>STACCATO/\u601d\u52a0\u56fe</value>
+            <value>\u5929\u7f8e\u610f</value>
+            <value>\u6c99\u9a70</value>
+            <value>walkershop/\u5965\u5361\u7d22</value>
+            <value>kisscat/\u63a5\u543b\u732b</value>
+            <value>\u5343\u767e\u5ea6</value>
+            <value>\u68ee\u8fbe</value>
+            <value>Merrell/\u8fc8\u4e50</value>
+            <value>Wolverine</value>
+            <value>GEOX</value>
+        </values>
+    </field>
+    <field>
+        <key>material</key>
+        <actions>
+            <action>case-insensitive</action>
+        </actions>
+        <values>
+            <value altvalues="\u68c9">\u68c9</value>
+            <value altvalues="\u9ebb">\u9ebb</value>
+            <value altvalues="\u5462">\u6bdb\u5462</value>
+            <value altvalues="\u725b\u4ed4,\u5355\u5b81,\u8d64\u8033">\u725b\u4ed4</value>
+            <value altvalues="\u4e1d">\u4e1d</value>
+            <value altvalues="\u76ae\u8349">\u76ae\u8349</value>
+            <value altvalues="\u76ae,PU">\u76ae\u9769</value>
+            <value altvalues="\u9526\u7eb6,\u6da4\u7eb6,\u8148\u7eb6,\u5c3c\u9f99,\u6c28\u7eb6">\u5316\u7ea4</value>
+            <value altvalues="\u857e\u4e1d">\u857e\u4e1d</value>
+            <value altvalues="\u7eb1,\u96ea\u7eba">\u96ea\u7eba&amp;\u7eb1</value>
+            <value altvalues="\u706f\u82af\u7ed2,\u6447\u7c92\u7ed2">\u706f\u82af\u7ed2</value>
+            <value altvalues="\u6bdb\u7ec7">\u6bdb\u7ec7</value>
+            <!--<value altvalues="\u68c9\u8d28,\u68c9\u5e03,\u68c9\u8d28\u9762\u6599,\u7eaf\u68c9,\u68c9\u4e1d\u5149\u68c9">\u68c9</value>-->
+            <!--<value altvalues="\u83ab\u4ee3\u5c14\u9762\u6599,\u83ab\u4ee3\u5c14\u7ea4\u7ef4,\u83ab\u4ee3\u5c14\u7ea4\u7ef4(\u83ab\u4ee3\u5c14)">\u83ab\u4ee3\u5c14</value>-->
+            <!--<value altvalues="LYCRA\u83b1\u5361">\u83b1\u5361</value>-->
+            <!--<value altvalues="\u5927\u9ebb(\u6c49\u9ebb),\u5927\u9ebb">\u9ebb</value>-->
+            <!--<value altvalues="">\u9ec4\u9ebb</value>-->
+            <!--<value altvalues="">\u7f57\u5e03\u9ebb</value>-->
+            <!--<value altvalues="">\u4e9a\u9ebb</value>-->
+            <!--<value altvalues="">\u82ce\u9ebb</value>-->
+            <!--<value altvalues="">\u9a7c\u6bdb</value>-->
+            <!--<value altvalues="">\u7266\u725b\u6bdb</value>-->
+            <!--<value altvalues="">\u9a6c\u6d77\u6bdb</value>-->
+            <!--<value altvalues="\u6851\u8695\u4e1d,\u67de\u8695\u4e1d">\u8695\u4e1d</value>-->
+            <!--<value altvalues="">\u5154\u6bdb</value>-->
+            <!--<value altvalues="\u5c71\u7f8a\u7ed2(\u7f8a\u7ed2),\u7f8a\u6bdb,\u7f8a\u7f94\u6bdb,\u7f8a\u7ed2,\u7f8a\u7ed2\u5927\u8863\u6599,\u7f8a\u6bdb\u5927\u8863\u6599,\u7f8a\u6bdb/\u7f8a\u7ed2">\u7f8a\u6bdb</value>-->
+            <!--<value altvalues="">\u5b89\u54e5\u62c9\u5c71\u7f8a\u6bdb</value>-->
+            <!--<value altvalues="">\u4eba\u4e1d</value>-->
+            <!--<value altvalues="\u771f\u4e1d\u9762\u6599">\u771f\u4e1d</value>-->
+            <!--<value altvalues="">\u4eff\u771f\u4e1d</value>-->
+            <!--<value altvalues="">\u76ae\u8349</value>-->
+            <!--<value altvalues="">\u76ae\u9769</value>-->
+            <!--<value altvalues="">\u916e\u6c28\u4e1d,\u5bbe\u9738</value>-->
+            <!--<value altvalues="">CVC</value>-->
+            <!--<value altvalues="\u805a\u9170\u80fa\u7ea4\u7ef4(\u9526\u7eb6),\u9526\u7eb6(\u5c3c\u9f99)">\u9526\u7eb6</value>-->
+            <!--<value altvalues="\u805a\u6c28\u916f\u5f39\u6027\u7ea4\u7ef4(\u6c28\u7eb6)">\u6c28\u7eb6</value>-->
+            <!--<value altvalues="\u805a\u4e19\u70ef\u8148\u7ea4\u7ef4(\u8148\u7eb6),\u8148\u7eb6/\u5316\u7ea4">\u8148\u7eb6</value>-->
+            <!--<value altvalues="\u805a\u5bf9\u82ef\u4e8c\u7532\u9178\u4e59\u4e8c\u916f(\u6da4\u7eb6)">\u6da4\u7eb6</value>-->
+            <!--<value altvalues="\u4eba\u68c9,\u9ecf\u80f6">\u9ecf\u80f6\u3001\u4eba\u68c9</value>-->
+            <!--<value altvalues="\u96ea\u7eba\u9762\u6599">\u96ea\u7eba</value>-->
+            <!--<value altvalues="">\u4e54\u5176\u7eb1</value>-->
+            <!--<value altvalues="">\u5854\u4e1d\u9686</value>-->
+            <!--<value altvalues="\u725b\u4ed4\u5e03">\u725b\u4ed4</value>-->
+            <!--<value altvalues="">\u5929\u9e45\u7ed2</value>-->
+            <!--<value altvalues="">\u518d\u751f\u7ea4\u7ef4\u7d20\u7ea4\u7ef4</value>-->
+            <!--<value altvalues="\u65b0\u578b\u805a\u916f\u7ea4\u7ef4,\u805a\u916f">\u805a\u916f\u7ea4\u7ef4</value>-->
+            <!--<value altvalues="">\u6851\u8695\u4e1d</value>-->
+            <!--<value altvalues="">\u7af9\u539f\u7ea4\u7ef4(\u7af9\u7ea4\u7ef4)</value>-->
+            <!--<value altvalues="\u7c98\u80f6\u7ea4\u7ef4(\u7c98\u7ea4)">\u7c98\u80f6\u7ea4\u7ef4</value>-->
+            <!--<value altvalues="\u5c71\u7f8a\u76ae,\u7ef5\u7f8a\u76ae">\u7f8a\u76ae</value>-->
+            <!--<value altvalues="pu\u76ae,PU\u4eba\u9020\u9769">pu</value>-->
+            <!--<value altvalues="\u5176\u5b83,\u5176\u5b83,\u5176\u5b83\u6750\u8d28,\u5176\u5b83\u9762\u6599">\u5176\u4ed6</value>-->
+            <!--<value altvalues="\u5176\u5b83\u5929\u7136\u7ea4\u7ef4">\u5176\u4ed6\u5929\u7136\u7ea4\u7ef4</value>-->
+            <!--<value altvalues="\u5176\u4ed6\u4eba\u9020\u7ea4\u7ef4">\u5176\u4ed6\u5408\u6210\u7ea4\u7ef4</value>-->
+            <!--<value altvalues="\u5c3c\u9f99\u76ae\u9769">\u5c3c\u9f99</value>-->
+            <!--<value altvalues="\u7fbd\u4e1d\u7ed2">\u7fbd\u7ed2</value>-->
+            <!--<value altvalues="\u5370\u82b1\u9762\u6599">\u5370\u82b1</value>-->
+            <!--<value altvalues="\u5176\u5b83\u76ae\u8d28">\u5176\u4ed6\u76ae\u8d28</value>-->
+            <!--<value altvalues="">\u68c9\u7eb6</value>-->
+            <!--<value altvalues="\u6da4\u68c9">\u68c9\u6da4</value>-->
+            <!--<value altvalues="">\u68c9\u6c28</value>-->
+            <!--<value altvalues="">\u918b\u7ea4</value>-->
+            <!--<value altvalues="">\u725b\u6d25\u7eba</value>-->
+            <!--<value altvalues="">\u857e\u4e1d</value>-->
+            <!--<value altvalues="">\u9526\u6da4</value>-->
+            <!--<value altvalues="">\u5316\u7ea4</value>-->
+            <!--<value altvalues="">\u5e73\u7ed2</value>-->
+            <!--<value altvalues="">\u9488\u7ec7\u5e03</value>-->
+            <!--<value altvalues="">\u83b1\u8d5b\u5c14\u7ea4\u7ef4(\u83b1\u8d5b\u5c14)</value>-->
+        </values>
+    </field>
+    <field>
+        <key>color</key>
+        <actions>
+        </actions>
+        <values>
+            <value altvalues="\u8c61\u7259\u9ed1\u8272,\u6a44\u6984\u9ed1\u8272,\u6cb9\u70df\u58a8\u8272,\u4e4c\u8d3c\u58a8\u8272,\u9ed1\u53e4\u94dc\u8272,\u53e4\u94dc\u9ed1\u8272,\u6697\u9ed1\u8272,\u78b3\u9ed1\u8272,\u7164\u9ed1\u8272,\u94c1\u9ed1\u8272,\u6f06\u9ed1\u8272,\u9752\u9ed1\u8272,\u9edd\u9ed1\u8272,\u571f\u9ed1\u7eaf\u9ed1\u8272,\u6df1\u9ed1\u8272,\u4e4c\u9ed1\u8272,\u9ed2\u8272,\u9ed1\u8272,\u9edd\u8272,\u9eef\u8272,\u58a8\u8272">\u9ed1</value> <!-- \u9ed1 -->
+            <value altvalues="\u8c61\u7259\u767d\u8272,\u672c\u767d\u8272,\u7389\u77f3\u767d\u8272,\u7f8a\u6bdb\u767d\u8272,\u9c7c\u809a\u767d\u8272,\u767d\u70df\u8272,\u8721\u767d\u8272,\u82b1\u767d\u8272,\u7eaf\u767d\u8272,\u82cd\u767d\u8272,\u96ea\u767d\u8272,\u950c\u767d\u8272,\u837c\u767d\u8272,\u767d\u674f\u8272,\u7cbe\u767d\u8272,\u51c0\u767d\u8272,\u83b9\u767d\u8272,\u6d01\u767d\u8272,\u70df\u767d\u8272,\u6f02\u767d\u8272,\u7d20\u767d\u8272,\u767d\u8272,\u96ea\u8272">\u767d</value> <!-- \u767d -->
+            <value altvalues="\u7070\u767d\u8272,\u5e9a\u65af\u535a\u7f57\u7070\u8272,\u6d45\u7c73\u7070\u8272,\u950c\u94a1\u767d\u8272,\u7261\u86ce\u767d\u8272,\u73cd\u73e0\u767d\u8272,\u6d45\u68d5\u7070\u8272,\u9e3d\u5b50\u7070\u8272,\u96ea\u7070\u8272,\u7070\u767d\u8272,\u7c73\u767d\u8272,\u6de1\u7070\u8272,\u7070\u77f3\u8272,\u4eae\u7070\u8272,\u6d45\u7070\u8272,\u767d\u7070\u8272,\u94c5\u767d\u8272,\u96fe\u7070\u8272,\u82b1\u7070\u8272,\u7d2b\u85e4\u7070\u8272,\u6d45\u77f3\u677f\u7070\u8272">\u7070</value> <!-- \u6d45\u7070 -->
+            <value altvalues="\u6c34\u8c82\u7070\u8272,\u5361\u5176\u7070\u8272,\u6c34\u6ce5\u7070\u8272,\u4eae\u5ca9\u7070\u8272,\u6df1\u74e6\u7070\u8272,\u77f3\u677f\u7070\u8272,\u70df\u7070\u8272,\u4e2d\u7070\u8272,\u6697\u7070\u8272,\u679c\u7070\u8272,\u8001\u94f6\u8272,\u5929\u7070\u8272,\u9f20\u7070\u8272,\u85d5\u7070\u8272,\u6b63\u7070\u8272,\u5ca9\u7070\u8272,\u7070\u8272">\u7070</value> <!-- \u4e2d\u7070 -->
+            <value altvalues="\u82cd\u9ed1\u8272,\u9752\u7070\u8272,\u9e4a\u7070\u8272,\u6df1\u7070\u8272,\u94c1\u7070\u8272,\u9ed1\u7070\u8272,\u9ed1\u8910\u8272,\u78b3\u7070\u8272,\u94c5\u7070\u8272,\u9e26\u9752\u8272">\u7070</value> <!-- \u6df1\u7070 -->
+            <value altvalues="\u91d1\u9e92\u9e9f\u8272,\u9ec4\u91d1\u8272,\u91d1\u8272">\u91d1\u5c5e</value> <!-- \u91d1 -->
+            <value altvalues="\u94f6\u7070\u8272,\u94f6\u767d\u8272,\u94f6\u8272,\u950c\u8272">\u91d1\u5c5e</value> <!-- \u94f6 -->
+            <value altvalues="\u82cd\u9752\u8272,\u7c89\u84dd\u8272,\u7070\u84dd\u8272,\u6697\u5a74\u513f\u7c89\u84dd\u8272,\u5a74\u513f\u7c89\u84dd\u8272,\u7231\u4e3d\u4e1d\u84dd\u8272,\u6d45\u6e56\u84dd\u8272,\u4eae\u5929\u84dd\u8272,\u51b0\u96ea\u84dd\u8272,\u6de1\u94a2\u84dd\u8272,\u6c34\u84dd\u8272,\u6de1\u84dd\u8272,\u6d45\u84dd\u8272">\u84dd</value> <!-- \u6d45\u84dd -->
+            <value altvalues="\u6e5b\u84dd\u8272,\u78a7\u84dd\u8272,\u9053\u5947\u84dd\u8272,\u4eae\u6d77\u84dd\u8272,\u6d77\u6d0b\u84dd\u8272,\u4e2d\u6e56\u84dd\u8272,\u851a\u84dd\u8272,\u5929\u84dd\u8272,\u6e56\u84dd\u8272,\u8272,\u6d77\u84dd\u8272">\u84dd</value> <!-- \u5929\u84dd -->
+            <value altvalues="\u4e2d\u84dd\u8272,\u77ff\u84dd\u8272,\u6d45\u6d77\u660c\u84dd\u8272,\u94a2\u84dd\u8272,\u8428\u514b\u65af\u84dd\u8272,\u84dd\u5b9d\u77f3\u8272,\u5b9d\u77f3\u84dd\u8272,\u9c9c\u84dd\u8272,\u5b9d\u84dd\u8272,\u7eaf\u84dd\u8272,\u94b4\u84dd\u8272,\u7fa4\u9752\u8272,\u4eae\u84dd\u8272,\u5f69\u84dd\u8272,\u84dd\u8272,\u5170\u8272">\u84dd</value> <!-- \u84dd -->
+            <value altvalues="\u725b\u4ed4\u6d45\u84dd\u8272">\u84dd</value> <!-- \u725b\u4ed4\u6d45\u84dd -->
+            <value altvalues="\u725b\u4ed4\u84dd\u8272">\u84dd</value> <!-- \u725b\u4ed4\u84dd -->
+            <value altvalues="\u725b\u4ed4\u6df1\u84dd\u8272">\u84dd</value> <!-- \u6df1\u725b\u4ed4\u84dd -->
+            <value altvalues="\u5b54\u96c0\u77f3\u7eff\u8272,\u7c97\u5b54\u96c0\u7eff\u8272,\u9752\u84dd\u8272,\u6d77\u7eff\u8272,\u6c34\u9e2d\u8272,\u5b54\u96c0\u7eff\u8272,\u5b54\u96c0\u84dd\u3001\u7eff\u677e\u77f3\u84dd\u8272,\u7070\u7eff\u677e\u77f3\u8272,\u4e2d\u7eff\u677e\u77f3\u8272,\u677e\u77f3\u7eff\u8272,\u6697\u7eff\u677e\u77f3\u8272,\u7eff\u677e\u77f3\u7eff\u8272,\u78a7\u7389\u77f3\u8272,\u677e\u82b1\u7eff\u8272">\u84dd</value> <!-- \u84dd\u7eff -->
+            <value altvalues="\u94c1\u84dd\u8272,\u6df1\u6e56\u84dd\u8272,\u6df1\u5929\u84dd\u8272,\u6697\u7070\u84dd\u8272,\u6df1\u5ca9\u6697\u84dd\u8272,\u666e\u9c81\u58eb\u84dd\u8272,\u5348\u591c\u84dd\u8272,\u6df1\u7070\u84dd\u8272,\u6697\u6d77\u5170\u8272,\u6c34\u624b\u84dd\u8272,\u6d77\u519b\u84dd\u8272,\u54c1\u84dd\u8272,\u85cf\u9752\u8272,\u975b\u9752\u8272,\u6df1\u5170\u6697\u9752\u8272,\u58a8\u84dd\u8272,\u4e2d\u84dd\u8272,\u975b\u84dd\u8272,\u9edb\u84dd\u8272,\u6d77\u519b\u8272,\u6697\u84dd\u8272,\u85cf\u84dd\u8272,\u6df1\u84dd\u8272,\u9edb\u8272">\u84dd</value> <!-- \u6df1\u84dd -->
+            <value altvalues="\u9999\u69df\u8272,\u9999\u69df\u9ec4\u8272,\u7a3b\u8349\u9ec4\u8272,\u8c61\u7259\u9ec4\u8272,\u7c73\u9ec4\u8272,\u4e73\u9ec4\u8272,\u6c99\u8272">\u9ec4</value> <!-- \u7c73\u9ec4 -->
+            <value altvalues="\u674f\u8272,\u4e73\u767d\u8272,\u7c73\u8272,\u7c73\u767d\u8272,\u674f\u4ec1\u767d\u8272">\u9ec4</value> <!-- \u7c73\u767d -->
+            <value altvalues="\u4e1d\u74dc\u82b1\u9ec4\u8272,\u542b\u7f9e\u8349\u9ec4\u8272,\u5411\u65e5\u8475\u8272,\u79cb\u9e92\u9e9f\u8272,\u82a5\u672b\u9ec4\u8272,\u6a44\u6984\u9ec4\u8272,\u4eae\u91d1\u9ec4\u8272,\u6a31\u8349\u9ec4\u8272,\u67e0\u6aac\u9ec4\u8272,\u8309\u8389\u9ec4\u8272,\u8273\u9ec4\u8272,\u91d1\u9ec4\u8272,\u6d45\u9ec4\u8272,\u9e2d\u9ec4\u8272,\u4eae\u9ec4\u8272,\u5ae9\u9ec4\u8272,\u6de1\u9ec4\u8272,\u9c9c\u9ec4\u8272,\u9e45\u9ec4\u8272,\u7eaf\u9ec4\u8272,\u9ec4\u8272">\u9ec4</value> <!-- \u6d45\u9ec4 -->
+            <value altvalues="\u6d45\u6854\u9ec4\u8272,\u7518\u8349\u9ec4\u8272,\u7389\u7c73\u9ec4\u8272,\u6697\u91d1\u83ca\u8272,\u9ec4\u7409\u7483\u8272,\u91d1\u59dc\u9ec4\u8272,\u77f3\u9ec4\u8272,\u7389\u7c73\u8272,\u94b4\u9ec4\u8272,\u86cb\u9ec4\u8272,\u69d0\u9ec4\u8272,\u8d64\u91d1\u8272,\u6708\u9ec4\u8272,\u7802\u9ec4\u8272,\u9ec4\u571f\u8272,\u840c\u9ec4\u8272,\u6c34\u9ec4\u8272,\u79cb\u9999\u8272,\u8431\u8349\u8272,\u4e2d\u9ec4\u8272,\u8471\u9ec4\u8272,\u660f\u9ec4\u8272,\u82cd\u9ec4\u8272,\u67af\u9ec4\u8272,\u660e\u9ec4\u8272">\u9ec4</value> <!-- \u4e2d\u9ec4 -->
+            <value altvalues="\u9549\u9ec4\u8272,\u6a59\u9ec4\u8272,\u4eae\u91d1\u83ca\u9ec4\u8272,\u5357\u74dc\u9ec4\u8272,\u6697\u91d1\u9ec4\u8272,\u6df1\u6854\u9ec4\u8272,\u6697\u6854\u9ec4\u8272,\u65e5\u5149\u9ec4\u8272,\u6854\u9ec4\u8272,\u90c1\u91d1\u8272,\u6a58\u9ec4\u8272,\u6a59\u9ec4\u8272,\u94c1\u9ec4\u8272,\u6d45\u6a59\u8272,\u94ec\u9ec4\u8272,\u571f\u9ec4\u8272,\u6697\u9ec4\u8272,\u85e4\u9ec4\u8272,\u674f\u9ec4\u8272,\u91d1\u83ca\u8272,\u6854\u8272,\u6a58\u8272,\u67ff\u8272">\u9ec4</value> <!-- \u6a58\u9ec4 -->
+            <value altvalues="\u6d45\u9ec4\u68d5\u8272,\u6c99\u8272,\u7eb3\u74e6\u767d\u8272,\u5361\u5176\u5e03\u8272,\u4eae\u5361\u5176\u8272,\u6d45\u5361\u5176\u8272,\u5361\u5176\u9ec4\u8272,\u5361\u5176\u8272,\u9a7c\u7070\u8272,\u7070\u9ec4\u8272">\u68d5</value> <!-- \u6d45\u5361\u5176 -->
+            <value altvalues="\u53e4\u94dc\u8272,\u6df1\u5361\u5176\u5e03\u8272,\u73c8\u7432\u68d5\u8272,\u6697\u5361\u5176\u8272,\u6d45\u7070\u8910\u8272,\u6df1\u5361\u5176\u8272,\u9752\u8910\u8272,\u7070\u8910\u8272,\u67af\u8336\u8272,\u6c99\u8910\u8272,\u571f\u8910\u8272">\u68d5</value> <!-- \u6df1\u5361\u5176 -->
+            <value altvalues="\u9a7c\u8272,\u4e2d\u68d5\u7070\u8272,\u91d1\u68d5\u8272,\u7c89\u68d5\u8272,\u9a6c\u978d\u68d5\u8272,\u6d45\u8910\u8272,\u6de1\u8910\u8272,\u6d45\u68d5\u8272,\u9a86\u9a7c\u8272,\u4e2d\u9a7c\u8272,\u68d5\u9ec4\u8272,\u6c99\u68d5\u8272,\u9ec4\u68d5\u8272,\u68d5\u8336\u8272,\u9ec4\u8910\u8272,\u8d64\u8910\u8272">\u68d5</value> <!-- \u6d45\u68d5 -->
+            <value altvalues="\u9e7f\u76ae\u68d5\u8272,\u5496\u5561\u8272,\u9ec4\u8336\u8272,\u68d5\u8910\u8272,\u7070\u8336\u8272,\u68d5\u7ea2\u8272,\u8336\u8910\u8272,\u6817\u8910\u8272,\u6652\u9ed1\u8272,\u7c9f\u8272,\u6817\u8272,\u8910\u8272,\u68d5\u8272,\u8d64\u8336\u8272,\u8d6d\u8272">\u68d5</value> <!-- \u8910(\u68d5) -->
+            <value altvalues="\u5de7\u514b\u529b\u8272,\u6697\u9ec4\u8910\u8272,\u6a44\u6984\u68d5\u8272,\u6731\u53e4\u529b\u8272,\u91cd\u8910\u8272,\u7ea2\u68d5\u8272,\u8c46\u68d5\u8272,\u7d2b\u8910\u8272,\u6df1\u6817\u8272,\u68d5\u9ed1\u8272,\u9ed2\u8336\u8272,\u7126\u8336\u8272,\u6697\u8910\u8272,\u6df1\u8910\u8272">\u68d5</value> <!-- \u6df1\u8910 -->
+            <value altvalues="\u5ae9\u7eff\u8272,\u67e0\u6aac\u7eff\u8272,\u4eae\u67e0\u6aac\u7eff\u8272,\u6d45\u6d77\u6d0b\u7eff\u8272,\u6d45\u6c34\u7eff\u8272,\u6d45\u677e\u7eff\u8272,\u6d45\u7eff\u7070\u8272,\u6d45\u8349\u7eff\u8272,\u6d45\u8c46\u7eff\u8272,\u82f9\u679c\u7eff\u8272,\u5ae9\u8471\u7eff\u8272,\u6d45\u9c9c\u7eff\u8272,\u6d77\u6c34\u7eff\u8272,\u8c46\u7eff\u8272,\u827e\u7eff\u8272,\u9752\u7af9\u8272,\u7eff\u9ec4\u8272,\u9752\u8c46\u8272,\u9752\u7eff\u8272,\u767d\u7eff\u8272,\u679c\u7eff\u8272,\u6de1\u7eff\u8272,\u6d45\u7eff\u8272,\u6c34\u7eff\u8272,\u62b9\u8336\u8272,\u6de1\u7070\u7eff\u8272">\u7eff</value> <!-- \u6d45\u7eff -->
+            <value altvalues="\u5e38\u6625\u85e4\u7eff\u8272,\u6df1\u7eff\u5b9d\u77f3\u8272,\u5a01\u5c3c\u65af\u7eff\u8272,\u6df1\u6d77\u6d0b\u7eff\u8272,\u7eff\u7409\u7483\u8272,\u82e6\u74dc\u7eff\u8272,\u6d77\u6d0b\u7eff\u8272,\u677e\u67cf\u7eff\u8272,\u4e2d\u6d77\u7eff\u8272,\u871c\u74dc\u7eff\u8272,\u82d4\u85d3\u7eff\u8272,\u7eff\u5b9d\u77f3\u8272,\u9e66\u9e49\u7eff\u8272,\u68ee\u6797\u7eff\u8272,\u7af9\u9752\u8272,\u77f3\u7eff\u8272,\u7eaf\u7eff\u8272,\u53f6\u7eff\u8272,\u82cd\u7eff\u8272,\u9752\u7fe0\u8272,\u7fe1\u7fe0\u8272,\u4e2d\u7eff\u8272,\u9c9c\u7eff\u8272,\u7389\u7eff\u8272,\u8349\u7eff\u8272,\u67f3\u7eff\u8272,\u8471\u7eff\u8272,\u7070\u7eff\u8272,\u78a7\u7eff\u8272,\u9752\u7eff\u8272,\u7eff\u7389\u8272,\u94b4\u7eff\u8272,\u4eae\u7eff\u8272,\u9752\u8471\u8272,\u8001\u7eff\u8272,\u7eff\u8272">\u7eff</value> <!-- \u7eff -->
+            <value altvalues="\u67af\u7eff\u8272,\u51ac\u74dc\u7eff\u8272,\u6a44\u6984\u7eff\u8272,\u5361\u5176\u7eff\u8272,\u8910\u7eff\u8272,\u519b\u7eff\u8272,\u68d5\u7eff\u8272,\u677e\u53f6\u8272,\u6a44\u6984\u8272,\u6d77\u677e\u8272,\u677e\u7eff\u8272,\u51ac\u7eff\u8272,\u94dc\u7eff\u8272">\u7eff</value> <!-- \u519b\u7eff -->
+            <value altvalues="\u9ec4\u7eff\u8272,\u8349\u7eff\u8272,\u8349\u5730\u7eff\u8272,\u539f\u91ce\u7eff\u8272,\u8349\u576a\u7eff\u8272,\u5ae9\u8349\u7eff\u8272,\u6df1\u8349\u7eff\u8272,\u6c34\u8349\u7eff\u8272">\u7eff</value> <!-- \u8349\u7eff -->
+            <value altvalues="\u6697\u6a44\u6984\u7eff\u8272,\u6df1\u7eff\u8910\u8272,\u8272,\u6697\u82d4\u7eff\u8272,\u58a8\u7389\u7eff\u8272,\u6697\u6d77\u7eff\u8272,\u6df1\u7fe0\u7eff\u8272,\u6df1\u677e\u7eff\u8272,\u7070\u6e56\u7eff\u8272,\u8336\u7eff\u8272,\u6697\u7eff\u8272,\u7fe0\u7eff\u8272,\u9244\u7eff\u8272,\u9edb\u7eff\u8272,\u58a8\u7eff\u8272,\u6df1\u7eff\u8272">\u7eff</value> <!-- \u58a8\u7eff -->
+            <value altvalues="\u6a59\u8272,\u6d45\u7edb\u7ea2\u8272,\u67ff\u5b50\u6a59\u8272,\u73ca\u745a\u7ea2\u8272,\u7ea2\u6a59\u8272,\u6697\u6a59\u8272,\u91c9\u7ea2\u8272,\u6df1\u6a59\u8272,\u6854\u68d5\u8272,\u67ff\u5b50\u8272,\u6a58\u7ea2\u8272,\u871c\u6a59\u8272,\u6854\u7ea2\u8272,\u8d64\u6a59\u8272,\u6a59\u7ea2\u8272,\u871c\u67d1\u8272,\u6731\u7ea2\u8272">\u7ea2</value> <!-- \u6a59\u7ea2 -->
+            <value altvalues="\u6731\u7802\u8272,\u5370\u5ea6\u7ea2\u8272,\u4e4c\u7f57\u677e\u7ea2\u8272,\u739b\u7459\u7ea2\u8272,\u77f3\u69b4\u7ea2\u8272,\u6708\u5b63\u7ea2\u8272,\u80ed\u8102\u7ea2\u8272,\u69b4\u82b1\u7ea2\u8272,\u7ea2\u5b9d\u77f3\u8272,\u8543\u8304\u7ea2\u8272,\u6cd5\u56fd\u7ea2\u8272,\u73ab\u7470\u7ea2\u8272,\u5c71\u8336\u7ea2\u8272,\u6a31\u6843\u7ea2\u8272,\u897f\u7ea2\u67ff\u8272,\u756a\u8304\u7ea2\u8272,\u7261\u4e39\u7ea2\u8272,\u5b9d\u77f3\u7ea2\u8272,\u8fa3\u6912\u7ea2\u8272,\u7eaf\u7ea2\u8272,\u5983\u7ea2\u8272,\u8089\u7ea2\u8272,\u8165\u7ea2\u8272,\u9c9c\u7ea2\u8272,\u6bb7\u7ea2\u8272,\u706b\u7ea2\u8272,\u7ea2\u8d64\u8272,\u6a31\u6843\u8272,\u5ae3\u7ea2\u8272,\u6de1\u7ea2\u8272,\u756a\u8304\u8272,\u771f\u7ea2\u8272,\u7261\u4e39\u8272,\u7329\u7ea2\u8272,\u8840\u7ea2\u8272,\u66d9\u7ea2\u8272,\u5927\u7ea2\u8272,\u7eef\u7ea2\u8272,\u7ea2\u8272,\u8d6b\u8272,\u5f64\u8272,\u8d64\u8272,\u7eef\u8272,\u6731\u8272">\u7ea2</value> <!-- \u6b63\u7ea2 -->
+            <value altvalues="\u9152\u7ea2\u3001\u52c3\u826e\u7b2c\u9152\u7ea2\u8272,\u6df1\u7d2b\u7ea2\u8272">\u7ea2</value> <!-- \u9152\u7ea2 -->
+            <value altvalues="\u6697\u9c91\u7ea2\u8272,\u6df1\u7eef\u8272,\u6697\u6df1\u7ea2\u8272,\u5a01\u5c3c\u65af\u7ea2\u8272,\u5370\u7b2c\u5b89\u7ea2\u8272,\u9e21\u51a0\u82b1\u7ea2\u8272,\u6697\u7edb\u7ea2\u8272,\u73b3\u7441\u7ea2\u8272,\u6df1\u70df\u7ea2\u8272,\u6df1\u91c9\u7ea2\u8272,\u9ad8\u7cb1\u7ea2\u8272,\u91c9\u5e95\u7ea2\u8272,\u67a3\u7ea2\u8272,\u6697\u7ea2\u8272,\u6df1\u7ea2\u8272,\u80ed\u8102\u8272,\u54c1\u7ea2\u8272,\u6d0b\u7ea2\u8272,\u7816\u7ea2\u8272,\u94c1\u7ea2\u8272,\u571f\u7ea2\u8272,\u706b\u9e64\u7ea2\u8272,\u4e2d\u7d2b\u7ea2\u8272">\u7ea2</value> <!-- \u6df1\u7ea2 -->
+            <value altvalues="\u6696\u7c89\u7ea2\u8272,\u70ed\u7c89\u7ea2\u8272,\u6d45\u8c46\u6c99\u8272,\u6d45\u73ca\u745a\u7ea2\u8272,\u739b\u7459\u7c89\u8272,\u6d45\u7c89\u7ea2\u8272,\u7c89\u7ea2\u767d\u8272,\u8377\u82b1\u7ea2\u8272,\u6df1\u7c89\u7ea2\u8272,\u6d45\u73ab\u7470\u8272,\u7c89\u767d\u8272,\u6de1\u7c89\u8272,\u6d45\u7c89\u8272,\u8c46\u6c99\u8272,\u83b2\u7ea2\u8272,\u7c89\u7ea2\u8272,\u8537\u8587\u8272,\u7c89\u767d\u8272,\u7c73\u7ea2\u8272,\u86e4\u7c89\u8272,\u7c89\u8272,\u4eae\u7c89\u7ea2\u8272">\u7d2b</value> <!-- \u7c89\u7ea2 -->
+            <value altvalues="\u85d5\u8377\u8272,\u4e01\u9999\u8272,\u85d5\u8377\u8272,\u6de1\u7d2b\u4e01\u9999\u8272,\u6d45\u7d2b\u8272,\u6d45\u85e4\u7d2b\u8272">\u7d2b</value> <!-- \u85d5\u8377 -->
+            <value altvalues="\u85d5\u7c89\u8272,\u6de1\u73ca\u745a\u8272,\u4eae\u73ca\u745a\u8272,\u73ca\u745a\u8272,\u8089\u7c89\u8272,\u4eae\u9c91\u7ea2\u8272,\u9c91\u7ea2\u8272,\u9c91\u9c7c\u7ea2\u8272,\u6d45\u9c91\u7ea2\u8272">\u7d2b</value> <!-- \u85d5\u7c89 -->
+            <value altvalues="\u85b0\u8863\u8349\u7d2b\u7ea2\u8272,\u4e2d\u9752\u7d2b\u7ea2\u8272,\u6df1\u6d0b\u7ea2\u8272,\u6de1\u7d2b\u7ea2\u8272,\u7f2c\u8349\u7d2b\u8272,\u6d45\u83b2\u7ea2\u8272,\u73ab\u7470\u7070\u8272,\u6df1\u85d5\u7ea2\u8272,\u6d77\u68e0\u7ea2\u8272,\u6d0b\u8471\u7d2b\u8272,\u6843\u7ea2\u8272,\u73ab\u7ea2\u8272,\u8273\u7c89\u8272,\u7d2b\u7c89\u8272,\u7edb\u7d2b\u8272,\u7d2b\u7ea2\u8272,\u7d2b\u7edb\u8272,\u6885\u7ea2\u8272">\u7d2b</value> <!-- \u73ab\u7ea2 -->
+            <value altvalues="\u85b0\u8863\u8349\u7d2b\u8272,\u6d45\u51e4\u4ed9\u7d2b\u8272,\u73ab\u7470\u7d2b\u7ea2\u8272,\u7d2b\u6c34\u6676\u8272,\u5170\u82b1\u7d2b\u8272,\u7d2b\u4e01\u9999\u8272,\u7d2b\u7f57\u5170\u8272,\u73ab\u7470\u7d2b\u8272,\u7275\u725b\u7d2b\u8272,\u4e01\u9999\u7d2b\u8272,\u9752\u83b2\u7d2b\u8272,\u4e2d\u5170\u7d2b\u8272,\u7d2b\u8587\u82b1\u8272,\u7ea2\u7d2b\u8272,\u85e4\u7d2b\u8272,\u7d2b\u85e4\u8272,\u9752\u83b2\u8272,\u4e01\u9999\u8272,\u6d0b\u674e\u8272,\u9752\u7d2b\u8272,\u4eae\u7d2b\u8272,\u7d2b\u8272">\u7d2b</value> <!-- \u7d2b -->
+            <value altvalues="\u6697\u6d0b\u7ea2\u8272,\u4e4c\u7d2b\u8272,\u6697\u5170\u7d2b\u8272,\u6728\u69ff\u7d2b\u8272,\u6df1\u9752\u83b2\u8272,\u82cd\u7d2b\u7f57\u5170\u8272,\u6df1\u5170\u82b1\u7d2b\u8272,\u6697\u7d2b\u7f57\u5170\u8272,\u6df1\u7d2b\u7f57\u5170\u8272,\u7d2b\u7f57\u84dd\u8272,\u8461\u8404\u7d2b\u8272,\u58a8\u7d2b\u8272,\u8d64\u7d2b\u8272,\u6df1\u7d2b\u8272,\u9edb\u7d2b\u8272,\u6697\u7d2b\u8272,\u9ed2\u7d2b\u8272,\u8304\u76ae\u7d2b\u8272">\u7d2b</value> <!-- \u6df1\u7d2b -->
+            <value altvalues="\u5170\u7d2b\u8272,\u975b\u8272,\u56fd\u9645\u514b\u83b1\u56e0\u84dd\u8272,\u7c89\u672b\u84dd\u8272,\u77e2\u8f66\u83ca\u84dd\u8272">\u7d2b</value> <!-- \u84dd\u7d2b -->
+            <value altvalues="\u6e10\u53d8\u8272">\u6e10\u53d8</value>
+            <value altvalues="\u82b1\u8272">\u82b1\u8272</value>
+            <value altvalues="\u5176\u4ed6\u8272,\u5176\u5b83\u8272">\u5176\u4ed6</value>
+
+            <value altvalues="\u8c61\u7259\u9ed1,\u6a44\u6984\u9ed1,\u6cb9\u70df\u58a8,\u4e4c\u8d3c\u58a8,\u9ed1\u53e4\u94dc,\u53e4\u94dc\u9ed1,\u6697\u9ed1,\u78b3\u9ed1,\u7164\u9ed1,\u94c1\u9ed1,\u6f06\u9ed1,\u9752\u9ed1,\u9edd\u9ed1,\u571f\u9ed1\u7eaf\u9ed1,\u6df1\u9ed1,\u4e4c\u9ed1,\u9ed2,\u9ed1,\u9edd,\u9eef,\u58a8">\u9ed1</value> <!-- \u9ed1 -->
+            <value altvalues="\u8c61\u7259\u767d,\u672c\u767d,\u7389\u77f3\u767d,\u7f8a\u6bdb\u767d,\u9c7c\u809a\u767d,\u767d\u70df,\u8721\u767d,\u82b1\u767d,\u7eaf\u767d,\u82cd\u767d,\u96ea\u767d,\u950c\u767d,\u837c\u767d,\u767d\u674f,\u7cbe\u767d,\u51c0\u767d,\u83b9\u767d,\u6d01\u767d,\u70df\u767d,\u6f02\u767d,\u7d20\u767d,\u767d,\u96ea">\u767d</value> <!-- \u767d -->
+            <value altvalues="\u7070\u767d,\u5e9a\u65af\u535a\u7f57\u7070,\u6d45\u7c73\u7070,\u950c\u94a1\u767d,\u7261\u86ce\u767d,\u73cd\u73e0\u767d,\u6d45\u68d5\u7070,\u9e3d\u5b50\u7070,\u96ea\u7070,\u7070\u767d,\u7c73\u767d,\u6de1\u7070,\u7070\u77f3,\u4eae\u7070,\u6d45\u7070,\u767d\u7070,\u94c5\u767d,\u96fe\u7070,\u82b1\u7070,\u7d2b\u85e4\u7070,\u6d45\u77f3\u677f\u7070">\u7070</value> <!-- \u6d45\u7070 -->
+            <value altvalues="\u6c34\u8c82\u7070,\u5361\u5176\u7070,\u6c34\u6ce5\u7070,\u4eae\u5ca9\u7070,\u6df1\u74e6\u7070,\u77f3\u677f\u7070,\u70df\u7070,\u4e2d\u7070,\u6697\u7070,\u679c\u7070,\u8001\u94f6,\u5929\u7070,\u9f20\u7070,\u85d5\u7070,\u6b63\u7070,\u5ca9\u7070,\u7070">\u7070</value> <!-- \u4e2d\u7070 -->
+            <value altvalues="\u82cd\u9ed1,\u9752\u7070,\u9e4a\u7070,\u6df1\u7070,\u94c1\u7070,\u9ed1\u7070,\u9ed1\u8910,\u78b3\u7070,\u94c5\u7070,\u9e26\u9752">\u7070</value> <!-- \u6df1\u7070 -->
+            <value altvalues="\u91d1\u9e92\u9e9f,\u9ec4\u91d1,\u91d1">\u91d1\u5c5e</value> <!-- \u91d1 -->
+            <value altvalues="\u94f6\u7070,\u94f6\u767d,\u94f6,\u950c">\u91d1\u5c5e</value> <!-- \u94f6 -->
+            <value altvalues="\u82cd\u9752,\u7c89\u84dd,\u7070\u84dd,\u6697\u5a74\u513f\u7c89\u84dd,\u5a74\u513f\u7c89\u84dd,\u7231\u4e3d\u4e1d\u84dd,\u6d45\u6e56\u84dd,\u4eae\u5929\u84dd,\u51b0\u96ea\u84dd,\u6de1\u94a2\u84dd,\u6c34\u84dd,\u6de1\u84dd,\u6d45\u84dd">\u84dd</value> <!-- \u6d45\u84dd -->
+            <value altvalues="\u6e5b\u84dd,\u78a7\u84dd,\u9053\u5947\u84dd,\u4eae\u6d77\u84dd,\u6d77\u6d0b\u84dd,\u4e2d\u6e56\u84dd,\u851a\u84dd,\u5929\u84dd,\u6e56\u84dd,,\u6d77\u84dd">\u84dd</value> <!-- \u5929\u84dd -->
+            <value altvalues="\u4e2d\u84dd,\u77ff\u84dd,\u6d45\u6d77\u660c\u84dd,\u94a2\u84dd,\u8428\u514b\u65af\u84dd,\u84dd\u5b9d\u77f3,\u5b9d\u77f3\u84dd,\u9c9c\u84dd,\u5b9d\u84dd,\u7eaf\u84dd,\u94b4\u84dd,\u7fa4\u9752,\u4eae\u84dd,\u5f69\u84dd,\u84dd,\u5170">\u84dd</value> <!-- \u84dd -->
+            <value altvalues="\u725b\u4ed4\u6d45\u84dd">\u84dd</value> <!-- \u725b\u4ed4\u6d45\u84dd -->
+            <value altvalues="\u725b\u4ed4\u84dd">\u84dd</value> <!-- \u725b\u4ed4\u84dd -->
+            <value altvalues="\u725b\u4ed4\u6df1\u84dd">\u84dd</value> <!-- \u6df1\u725b\u4ed4\u84dd -->
+            <value altvalues="\u5b54\u96c0\u77f3\u7eff,\u7c97\u5b54\u96c0\u7eff,\u9752\u84dd,\u6d77\u7eff,\u6c34\u9e2d,\u5b54\u96c0\u7eff,\u5b54\u96c0\u84dd\u3001\u7eff\u677e\u77f3\u84dd,\u7070\u7eff\u677e\u77f3,\u4e2d\u7eff\u677e\u77f3,\u677e\u77f3\u7eff,\u6697\u7eff\u677e\u77f3,\u7eff\u677e\u77f3\u7eff,\u78a7\u7389\u77f3,\u677e\u82b1\u7eff">\u84dd</value> <!-- \u84dd\u7eff -->
+            <value altvalues="\u94c1\u84dd,\u6df1\u6e56\u84dd,\u6df1\u5929\u84dd,\u6697\u7070\u84dd,\u6df1\u5ca9\u6697\u84dd,\u666e\u9c81\u58eb\u84dd,\u5348\u591c\u84dd,\u6df1\u7070\u84dd,\u6697\u6d77\u5170,\u6c34\u624b\u84dd,\u6d77\u519b\u84dd,\u54c1\u84dd,\u85cf\u9752,\u975b\u9752,\u6df1\u5170\u6697\u9752,\u58a8\u84dd,\u4e2d\u84dd,\u975b\u84dd,\u9edb\u84dd,\u6d77\u519b,\u6697\u84dd,\u85cf\u84dd,\u6df1\u84dd,\u9edb">\u84dd</value> <!-- \u6df1\u84dd -->
+            <value altvalues="\u9999\u69df,\u9999\u69df\u9ec4,\u7a3b\u8349\u9ec4,\u8c61\u7259\u9ec4,\u7c73\u9ec4,\u4e73\u9ec4,\u6c99">\u9ec4</value> <!-- \u7c73\u9ec4 -->
+            <value altvalues="\u674f,\u4e73\u767d,\u7c73,\u7c73\u767d,\u674f\u4ec1\u767d">\u9ec4</value> <!-- \u7c73\u767d -->
+            <value altvalues="\u4e1d\u74dc\u82b1\u9ec4,\u542b\u7f9e\u8349\u9ec4,\u5411\u65e5\u8475,\u79cb\u9e92\u9e9f,\u82a5\u672b\u9ec4,\u6a44\u6984\u9ec4,\u4eae\u91d1\u9ec4,\u6a31\u8349\u9ec4,\u67e0\u6aac\u9ec4,\u8309\u8389\u9ec4,\u8273\u9ec4,\u91d1\u9ec4,\u6d45\u9ec4,\u9e2d\u9ec4,\u4eae\u9ec4,\u5ae9\u9ec4,\u6de1\u9ec4,\u9c9c\u9ec4,\u9e45\u9ec4,\u7eaf\u9ec4,\u9ec4">\u9ec4</value> <!-- \u6d45\u9ec4 -->
+            <value altvalues="\u6d45\u6854\u9ec4,\u7518\u8349\u9ec4,\u7389\u7c73\u9ec4,\u6697\u91d1\u83ca,\u9ec4\u7409\u7483,\u91d1\u59dc\u9ec4,\u77f3\u9ec4,\u7389\u7c73,\u94b4\u9ec4,\u86cb\u9ec4,\u69d0\u9ec4,\u8d64\u91d1,\u6708\u9ec4,\u7802\u9ec4,\u9ec4\u571f,\u840c\u9ec4,\u6c34\u9ec4,\u79cb\u9999,\u8431\u8349,\u4e2d\u9ec4,\u8471\u9ec4,\u660f\u9ec4,\u82cd\u9ec4,\u67af\u9ec4,\u660e\u9ec4">\u9ec4</value> <!-- \u4e2d\u9ec4 -->
+            <value altvalues="\u9549\u9ec4,\u6a59\u9ec4,\u4eae\u91d1\u83ca\u9ec4,\u5357\u74dc\u9ec4,\u6697\u91d1\u9ec4,\u6df1\u6854\u9ec4,\u6697\u6854\u9ec4,\u65e5\u5149\u9ec4,\u6854\u9ec4,\u90c1\u91d1,\u6a58\u9ec4,\u6a59\u9ec4,\u94c1\u9ec4,\u6d45\u6a59,\u94ec\u9ec4,\u571f\u9ec4,\u6697\u9ec4,\u85e4\u9ec4,\u674f\u9ec4,\u91d1\u83ca,\u6854,\u6a58,\u67ff">\u9ec4</value> <!-- \u6a58\u9ec4 -->
+            <value altvalues="\u6d45\u9ec4\u68d5,\u6c99,\u7eb3\u74e6\u767d,\u5361\u5176\u5e03,\u4eae\u5361\u5176,\u6d45\u5361\u5176,\u5361\u5176\u9ec4,\u5361\u5176,\u9a7c\u7070,\u7070\u9ec4">\u68d5</value> <!-- \u6d45\u5361\u5176 -->
+            <value altvalues="\u53e4\u94dc,\u6df1\u5361\u5176\u5e03,\u73c8\u7432\u68d5,\u6697\u5361\u5176,\u6d45\u7070\u8910,\u6df1\u5361\u5176,\u9752\u8910,\u7070\u8910,\u67af\u8336,\u6c99\u8910,\u571f\u8910">\u68d5</value> <!-- \u6df1\u5361\u5176 -->
+            <value altvalues="\u9a7c,\u4e2d\u68d5\u7070,\u91d1\u68d5,\u7c89\u68d5,\u9a6c\u978d\u68d5,\u6d45\u8910,\u6de1\u8910,\u6d45\u68d5,\u9a86\u9a7c,\u4e2d\u9a7c,\u68d5\u9ec4,\u6c99\u68d5,\u9ec4\u68d5,\u68d5\u8336,\u9ec4\u8910,\u8d64\u8910">\u68d5</value> <!-- \u6d45\u68d5 -->
+            <value altvalues="\u9e7f\u76ae\u68d5,\u5496\u5561,\u9ec4\u8336,\u68d5\u8910,\u7070\u8336,\u68d5\u7ea2,\u8336\u8910,\u6817\u8910,\u6652\u9ed1,\u7c9f,\u6817,\u8910,\u68d5,\u8d64\u8336,\u8d6d">\u68d5</value> <!-- \u8910(\u68d5) -->
+            <value altvalues="\u5de7\u514b\u529b,\u6697\u9ec4\u8910,\u6a44\u6984\u68d5,\u6731\u53e4\u529b,\u91cd\u8910,\u7ea2\u68d5,\u8c46\u68d5,\u7d2b\u8910,\u6df1\u6817,\u68d5\u9ed1,\u9ed2\u8336,\u7126\u8336,\u6697\u8910,\u6df1\u8910">\u68d5</value> <!-- \u6df1\u8910 -->
+            <value altvalues="\u5ae9\u7eff,\u67e0\u6aac\u7eff,\u4eae\u67e0\u6aac\u7eff,\u6d45\u6d77\u6d0b\u7eff,\u6d45\u6c34\u7eff,\u6d45\u677e\u7eff,\u6d45\u7eff\u7070,\u6d45\u8349\u7eff,\u6d45\u8c46\u7eff,\u82f9\u679c\u7eff,\u5ae9\u8471\u7eff,\u6d45\u9c9c\u7eff,\u6d77\u6c34\u7eff,\u8c46\u7eff,\u827e\u7eff,\u9752\u7af9,\u7eff\u9ec4,\u9752\u8c46,\u9752\u7eff,\u767d\u7eff,\u679c\u7eff,\u6de1\u7eff,\u6d45\u7eff,\u6c34\u7eff,\u62b9\u8336,\u6de1\u7070\u7eff">\u7eff</value> <!-- \u6d45\u7eff -->
+            <value altvalues="\u5e38\u6625\u85e4\u7eff,\u6df1\u7eff\u5b9d\u77f3,\u5a01\u5c3c\u65af\u7eff,\u6df1\u6d77\u6d0b\u7eff,\u7eff\u7409\u7483,\u82e6\u74dc\u7eff,\u6d77\u6d0b\u7eff,\u677e\u67cf\u7eff,\u4e2d\u6d77\u7eff,\u871c\u74dc\u7eff,\u82d4\u85d3\u7eff,\u7eff\u5b9d\u77f3,\u9e66\u9e49\u7eff,\u68ee\u6797\u7eff,\u7af9\u9752,\u77f3\u7eff,\u7eaf\u7eff,\u53f6\u7eff,\u82cd\u7eff,\u9752\u7fe0,\u7fe1\u7fe0,\u4e2d\u7eff,\u9c9c\u7eff,\u7389\u7eff,\u8349\u7eff,\u67f3\u7eff,\u8471\u7eff,\u7070\u7eff,\u78a7\u7eff,\u9752\u7eff,\u7eff\u7389,\u94b4\u7eff,\u4eae\u7eff,\u9752\u8471,\u8001\u7eff,\u7eff">\u7eff</value> <!-- \u7eff -->
+            <value altvalues="\u67af\u7eff,\u51ac\u74dc\u7eff,\u6a44\u6984\u7eff,\u5361\u5176\u7eff,\u8910\u7eff,\u519b\u7eff,\u68d5\u7eff,\u677e\u53f6,\u6a44\u6984,\u6d77\u677e,\u677e\u7eff,\u51ac\u7eff,\u94dc\u7eff">\u7eff</value> <!-- \u519b\u7eff -->
+            <value altvalues="\u9ec4\u7eff,\u8349\u7eff,\u8349\u5730\u7eff,\u539f\u91ce\u7eff,\u8349\u576a\u7eff,\u5ae9\u8349\u7eff,\u6df1\u8349\u7eff,\u6c34\u8349\u7eff">\u7eff</value> <!-- \u8349\u7eff -->
+            <value altvalues="\u6697\u6a44\u6984\u7eff,\u6df1\u7eff\u8910,,\u6697\u82d4\u7eff,\u58a8\u7389\u7eff,\u6697\u6d77\u7eff,\u6df1\u7fe0\u7eff,\u6df1\u677e\u7eff,\u7070\u6e56\u7eff,\u8336\u7eff,\u6697\u7eff,\u7fe0\u7eff,\u9244\u7eff,\u9edb\u7eff,\u58a8\u7eff,\u6df1\u7eff">\u7eff</value> <!-- \u58a8\u7eff -->
+            <value altvalues="\u6a59,\u6d45\u7edb\u7ea2,\u67ff\u5b50\u6a59,\u73ca\u745a\u7ea2,\u7ea2\u6a59,\u6697\u6a59,\u91c9\u7ea2,\u6df1\u6a59,\u6854\u68d5,\u67ff\u5b50,\u6a58\u7ea2,\u871c\u6a59,\u6854\u7ea2,\u8d64\u6a59,\u6a59\u7ea2,\u871c\u67d1,\u6731\u7ea2">\u7ea2</value> <!-- \u6a59\u7ea2 -->
+            <value altvalues="\u6731\u7802,\u5370\u5ea6\u7ea2,\u4e4c\u7f57\u677e\u7ea2,\u739b\u7459\u7ea2,\u77f3\u69b4\u7ea2,\u6708\u5b63\u7ea2,\u80ed\u8102\u7ea2,\u69b4\u82b1\u7ea2,\u7ea2\u5b9d\u77f3,\u8543\u8304\u7ea2,\u6cd5\u56fd\u7ea2,\u73ab\u7470\u7ea2,\u5c71\u8336\u7ea2,\u6a31\u6843\u7ea2,\u897f\u7ea2\u67ff,\u756a\u8304\u7ea2,\u7261\u4e39\u7ea2,\u5b9d\u77f3\u7ea2,\u8fa3\u6912\u7ea2,\u7eaf\u7ea2,\u5983\u7ea2,\u8089\u7ea2,\u8165\u7ea2,\u9c9c\u7ea2,\u6bb7\u7ea2,\u706b\u7ea2,\u7ea2\u8d64,\u6a31\u6843,\u5ae3\u7ea2,\u6de1\u7ea2,\u756a\u8304,\u771f\u7ea2,\u7261\u4e39,\u7329\u7ea2,\u8840\u7ea2,\u66d9\u7ea2,\u5927\u7ea2,\u7eef\u7ea2,\u7ea2,\u8d6b,\u5f64,\u8d64,\u7eef,\u6731">\u7ea2</value> <!-- \u6b63\u7ea2 -->
+            <value altvalues="\u9152\u7ea2\u3001\u52c3\u826e\u7b2c\u9152\u7ea2,\u6df1\u7d2b\u7ea2">\u7ea2</value> <!-- \u9152\u7ea2 -->
+            <value altvalues="\u6697\u9c91\u7ea2,\u6df1\u7eef,\u6697\u6df1\u7ea2,\u5a01\u5c3c\u65af\u7ea2,\u5370\u7b2c\u5b89\u7ea2,\u9e21\u51a0\u82b1\u7ea2,\u6697\u7edb\u7ea2,\u73b3\u7441\u7ea2,\u6df1\u70df\u7ea2,\u6df1\u91c9\u7ea2,\u9ad8\u7cb1\u7ea2,\u91c9\u5e95\u7ea2,\u67a3\u7ea2,\u6697\u7ea2,\u6df1\u7ea2,\u80ed\u8102,\u54c1\u7ea2,\u6d0b\u7ea2,\u7816\u7ea2,\u94c1\u7ea2,\u571f\u7ea2,\u706b\u9e64\u7ea2,\u4e2d\u7d2b\u7ea2">\u7ea2</value> <!-- \u6df1\u7ea2 -->
+            <value altvalues="\u6696\u7c89\u7ea2,\u70ed\u7c89\u7ea2,\u6d45\u8c46\u6c99,\u6d45\u73ca\u745a\u7ea2,\u739b\u7459\u7c89,\u6d45\u7c89\u7ea2,\u7c89\u7ea2\u767d,\u8377\u82b1\u7ea2,\u6df1\u7c89\u7ea2,\u6d45\u73ab\u7470,\u7c89\u767d,\u6de1\u7c89,\u6d45\u7c89,\u8c46\u6c99,\u83b2\u7ea2,\u7c89\u7ea2,\u8537\u8587,\u7c89\u767d,\u7c73\u7ea2,\u86e4\u7c89,\u7c89,\u4eae\u7c89\u7ea2">\u7d2b</value> <!-- \u7c89\u7ea2 -->
+            <value altvalues="\u85d5\u8377,\u4e01\u9999,\u85d5\u8377,\u6de1\u7d2b\u4e01\u9999,\u6d45\u7d2b,\u6d45\u85e4\u7d2b">\u7d2b</value> <!-- \u85d5\u8377 -->
+            <value altvalues="\u85d5\u7c89,\u6de1\u73ca\u745a,\u4eae\u73ca\u745a,\u73ca\u745a,\u8089\u7c89,\u4eae\u9c91\u7ea2,\u9c91\u7ea2,\u9c91\u9c7c\u7ea2,\u6d45\u9c91\u7ea2">\u7d2b</value> <!-- \u85d5\u7c89 -->
+            <value altvalues="\u85b0\u8863\u8349\u7d2b\u7ea2,\u4e2d\u9752\u7d2b\u7ea2,\u6df1\u6d0b\u7ea2,\u6de1\u7d2b\u7ea2,\u7f2c\u8349\u7d2b,\u6d45\u83b2\u7ea2,\u73ab\u7470\u7070,\u6df1\u85d5\u7ea2,\u6d77\u68e0\u7ea2,\u6d0b\u8471\u7d2b,\u6843\u7ea2,\u73ab\u7ea2,\u8273\u7c89,\u7d2b\u7c89,\u7edb\u7d2b,\u7d2b\u7ea2,\u7d2b\u7edb,\u6885\u7ea2">\u7d2b</value> <!-- \u73ab\u7ea2 -->
+            <value altvalues="\u85b0\u8863\u8349\u7d2b,\u6d45\u51e4\u4ed9\u7d2b,\u73ab\u7470\u7d2b\u7ea2,\u7d2b\u6c34\u6676,\u5170\u82b1\u7d2b,\u7d2b\u4e01\u9999,\u7d2b\u7f57\u5170,\u73ab\u7470\u7d2b,\u7275\u725b\u7d2b,\u4e01\u9999\u7d2b,\u9752\u83b2\u7d2b,\u4e2d\u5170\u7d2b,\u7d2b\u8587\u82b1,\u7ea2\u7d2b,\u85e4\u7d2b,\u7d2b\u85e4,\u9752\u83b2,\u4e01\u9999,\u6d0b\u674e,\u9752\u7d2b,\u4eae\u7d2b,\u7d2b">\u7d2b</value> <!-- \u7d2b -->
+            <value altvalues="\u6697\u6d0b\u7ea2,\u4e4c\u7d2b,\u6697\u5170\u7d2b,\u6728\u69ff\u7d2b,\u6df1\u9752\u83b2,\u82cd\u7d2b\u7f57\u5170,\u6df1\u5170\u82b1\u7d2b,\u6697\u7d2b\u7f57\u5170,\u6df1\u7d2b\u7f57\u5170,\u7d2b\u7f57\u84dd,\u8461\u8404\u7d2b,\u58a8\u7d2b,\u8d64\u7d2b,\u6df1\u7d2b,\u9edb\u7d2b,\u6697\u7d2b,\u9ed2\u7d2b,\u8304\u76ae\u7d2b">\u7d2b</value> <!-- \u6df1\u7d2b -->
+            <value altvalues="\u5170\u7d2b,\u975b,\u56fd\u9645\u514b\u83b1\u56e0\u84dd,\u7c89\u672b\u84dd,\u77e2\u8f66\u83ca\u84dd">\u7d2b</value> <!-- \u84dd\u7d2b -->
+            <value altvalues="\u6e10\u53d8">\u6e10\u53d8</value>
+            <value altvalues="\u82b1">\u82b1\u8272</value>
+            <value altvalues="\u5176\u4ed6,\u5176\u5b83">\u5176\u4ed6</value>
+        </values>
+    </field>
+    <field>
+        <key>print</key>
+        <actions>
+            <action>remove-escapechar</action>
+            <action>case-insensitive</action>
+        </actions>
+        <values>
+            <value altvalues ="\u5176\u5b83,\u5176\u4ed6,\u4e0d\u89c4\u5219,\u5176\u4ed6\u56fe\u6848">\u5176\u4ed6</value>
+            <value altvalues ="\u6587\u5b57,\u82f1\u6587,\u6807\u8bed,\u53e3\u53f7,\u5b57\u6bcd,\u6570\u5b57">\u6587\u5b57</value>
+            <value altvalues ="\u62fc\u8272/\u649e\u8272,\u62fc\u63a5,\u62fc\u8272,\u649e\u8272">\u62fc\u8272</value>
+            <value altvalues ="\u8ff7\u5f69">\u8ff7\u5f69</value>
+            <value altvalues ="\u690d\u7269\u82b1\u5349,\u82b1\u5349,\u5c0f\u6ee1\u82b1,\u690d\u7269,\u6811\u6728">\u690d\u7269</value>
+            <value altvalues ="\u6f2b\u753b,\u52a8\u753b,\u52a8\u6f2b,ACG,\u4e8c\u6b21\u5143,\u65e5\u6f2b,\u7f8e\u6f2b,\u8d85\u4eba,\u8759\u8760\u4fa0,\u6f2b\u5a01,Marvel,\u5361\u901a\u52a8\u6f2b,\u5361\u901a">\u5361\u901a</value>
+            <value altvalues ="\u6c11\u65cf\u98ce\u82b1\u578b,3D\u6548\u679c,\u788e\u82b1">\u5370\u82b1</value>
+            <value altvalues ="\u52a8\u7269\u56fe\u6848,\u52a8\u7269\u7eb9,\u52a8\u7269,\u5343\u9e1f\u683c,\u5176\u5b83\u52a8\u7269">\u52a8\u7269</value>
+            <value altvalues ="\u7eaf\u8272">\u7eaf\u8272</value>
+            <value altvalues ="\u6761\u7eb9,\u7ec6\u6a2a\u6761\u7eb9,\u7c97\u6a2a\u6761\u7eb9,\u7ad6\u6761\u7eb9,\u6a2a\u6761,\u7ad6\u6761">\u6761\u7eb9</value>
+            <value altvalues ="\u683c\u5b50,\u683c\u7eb9">\u683c\u5b50</value>
+            <value altvalues ="\u4eba\u7269,\u8138\u8c31,\u4eba\u50cf,\u8096\u50cf,\u4eba\u8138">\u4eba\u7269</value>
+            <value altvalues ="\u54c1\u724cLOGO,LOGO">\u54c1\u724cLOGO</value>
+            <value altvalues ="\u5b57\u6bcd,\u5b57\u6bcd\u6570\u5b57">\u5b57\u6bcd</value>
+            <value altvalues ="\u51e0\u4f55,\u51e0\u4f55\u56fe\u6848,\u6761\u7eb9">\u51e0\u4f55</value>
+            <value altvalues ="\u82b1\u5349,\u82b1\u8272,\u82b1\u6735,3D\u5370\u82b1,\u5927\u82b1,\u82b1\u8349,\u82b1\u82de">\u82b1\u5349</value>
+            <value altvalues ="\u6ce2\u70b9,\u5706\u70b9">\u5706\u70b9</value>
+            <value altvalues ="\u6c34\u58a8\u753b,\u98ce\u666f,\u5c71\u6c34,\u5efa\u7b51,\u540d\u80dc">\u98ce\u666f</value>
+            <value altvalues ="\u8c79\u7eb9">\u8c79\u7eb9</value>
+            <value altvalues ="\u6cb9\u753b">\u6cb9\u753b</value>
+            <value altvalues ="\u6591\u9a6c\u7eb9">\u6591\u9a6c\u7eb9</value>
+            <value altvalues ="\u86c7\u7eb9">\u86c7\u7eb9</value>
+            <value altvalues ="\u9cc4\u9c7c\u7eb9">\u9cc4\u9c7c\u7eb9</value>
+            <value altvalues ="\u62bd\u8c61\u56fe\u6848">\u56fe\u6848</value>
+            <value altvalues ="\u624b\u7ed8,\u6d82\u9e26,\u7d20\u63cf\u624b\u7ed8">\u6d82\u9e26</value>
+            <value altvalues ="\u5f62\u72b6">\u5f62\u72b6</value>
+            <value altvalues ="\u5fc3\u5f62">\u5fc3\u5f62</value>
+            <value altvalues ="\u98ce\u666f">\u98ce\u666f</value>
+            <value altvalues ="\u6570\u5b57">\u6570\u5b57</value>
+            <value altvalues ="\u8f66\u7f1d\u7ebf">\u8f66\u7f1d\u7ebf</value>
+            <value altvalues ="\u683c\u7eb9">\u683c\u7eb9</value>
+            <value altvalues ="\u5efa\u7b51">\u5efa\u7b51</value>
+            <value altvalues ="\u6e10\u53d8">\u6e10\u53d8</value>
+            <value altvalues ="\u5343\u9e1f\u7eb9">\u5343\u9e1f\u7eb9</value>
+            <value altvalues ="\u9ab7\u9ac5,\u9aa8\u67b6">\u9ab7\u9ac5</value>
+            <value altvalues ="\u56fe\u817e">\u56fe\u817e</value>
+            <value altvalues ="\u7eaf\u8272,\u7eaf\u767d,\u7eaf\u9ed1,\u7eaf\u84dd,\u7eaf\u7ea2,\u7eaf\u9ec4,\u7eaf">\u65e0\u56fe\u6848</value>
+        </values>
+    </field>
+    <field>
+        <key>reviewsize</key>
+        <actions>
+            <action>case-insensitive</action>
+        </actions>
+        <values>
+            <value altvalues="165/S,160">S</value>
+            <value altvalues="170/M,170">M</value>
+            <value altvalues="175/L,175">L</value>
+            <value altvalues="180/XL,180">XL</value>
+            <value altvalues="185/XXL,185">XXL</value>
+            <value altvalues="190/3XL,190">3XL</value>
+            <value altvalues="195/4XL,195">4XL</value>
+        </values>
+    </field>
+    <field>
+        <key>style</key>
+        <actions>
+            <action>case-insensitive</action>
+            <action>remove-escapechar</action>
+        </actions>
+        <values>
+            <value altvalues="\u7b80\u7ea6,\u767e\u642d,\u6781\u7b80,\u5317\u6b27">\u7b80\u7ea6&amp;\u767e\u642d</value>
+            <value altvalues="\u65f6\u5c1a,\u6d41\u884c,fashion,\u8bbe\u8ba1\u611f,\u8bbe\u8ba1\u5e08">\u65f6\u5c1a</value>
+            <value altvalues="\u670b\u514b">\u670b\u514b</value>
+            <value altvalues="\u590d\u53e4,\u6000\u65e7,vintage">\u590d\u53e4</value>
+            <value altvalues="\u5962\u534e,\u534e\u4e3d,\u571f\u8c6a">\u5962\u534e</value>
+            <value altvalues="\u6c11\u65cf,\u6ce2\u897f\u7c73\u4e9a">\u6c11\u65cf</value>
+            <value altvalues="\u6e05\u65b0">\u6e05\u65b0</value>
+            <value altvalues="\u7530\u56ed,\u4e61\u6751">\u7530\u56ed</value>
+            <value altvalues="\u563b\u54c8,hiphop">\u563b\u54c8</value>
+            <value altvalues="\u53ef\u7231,\u840c,\u841d\u8389,\u6d1b\u4e3d\u5854">\u53ef\u7231</value>
+            <value altvalues="\u6587\u827a,\u827a\u672f">\u6587\u827a</value>
+            <value altvalues="\u6ce2\u897f\u7c73\u4e9a">\u6ce2\u897f\u7c73\u4e9a</value>
+            <value altvalues="\u519b\u4e8b,\u519b\u88c5,\u519b\u670d,\u98de\u884c,\u7a7a\u519b,\u6d77\u519b,\u9646\u519b,\u519b\u7248,\u6218\u672f,MA1,M65,N3B,M43,B15,B3,BOMBER">\u519b\u4e8b\u98ce\u683c</value>
+            <value altvalues="\u8212\u9002,\u67d4\u8f6f,\u5bbd\u677e">\u8212\u9002</value>
+            <value altvalues="\u6dd1\u5973">\u6dd1\u5973\u98ce</value>
+            <value altvalues="\u751c\u7f8e,\u751c\u5fc3">\u751c\u7f8e</value>
+            <value altvalues="\u6027\u611f,\u8bf1\u60d1,sexy">\u6027\u611f</value>
+            <value altvalues="\u4f18\u96c5,\u4f18\u7f8e">\u4f18\u96c5</value>
+            <value altvalues="\u68ee\u5973,\u68ee\u7cfb">\u68ee\u5973</value>
+            <value altvalues="OL\u901a\u52e4">OL\u901a\u52e4</value>
+            <value altvalues="\u540d\u5a9b">\u540d\u5a9b</value>
+            <value altvalues="\u4e2d\u6027">\u4e2d\u6027</value>
+            <value altvalues="\u97e9\u98ce,\u97e9\u6d41,\u97e9\u7248">\u97e9\u98ce</value>
+            <value altvalues="\u6b27\u7f8e,\u7f8e\u5f0f,\u7f8e\u56fd,\u6b27\u6d32,\u5bab\u5ef7,\u6b27\u7248,\u7f8e\u7248,\u5730\u4e2d\u6d77,\u610f\u5927\u5229,\u6cd5\u56fd">\u6b27\u7f8e</value>
+            <value altvalues="\u82f1\u4f26,\u82f1\u5f0f,\u82f1\u56fd,\u82f1\u7248">\u82f1\u4f26</value>
+            <value altvalues="\u4e2d\u56fd\u98ce,\u4e2d\u5f0f,\u6c34\u58a8,\u65d7\u888d,\u5510\u88c5,\u4e2d\u5c71\u88c5,\u6c49\u670d,\u9752\u887f,\u66f2\u88fe">\u4e2d\u56fd\u98ce</value>
+            <value altvalues="\u65e5\u7cfb,\u65e5\u5f0f,\u65e5\u672c,\u548c\u5f0f,\u548c\u670d,\u65e5\u7248">\u65e5\u7cfb</value>
+            <value altvalues="\u5b66\u9662,\u6821\u56ed,\u6c34\u624b\u670d,JK">\u5b66\u9662</value>
+            <value altvalues="\u5546\u52a1\u4f11\u95f2,\u4f11\u95f2\u897f\u88c5,\u4f11\u95f2\u897f\u670d">\u5546\u52a1\u4f11\u95f2</value>
+            <value altvalues="\u8fd0\u52a8">\u8fd0\u52a8</value>
+            <value altvalues="\u8857\u5934">\u8857\u5934</value>
+            <value altvalues="\u7ec5\u58eb">\u7ec5\u58eb</value>
+            <value altvalues="\u5b09\u76ae">\u5b09\u76ae</value>
+            <value altvalues="\u5ea6\u5047\u98ce">\u5ea6\u5047\u98ce</value>
+            <value altvalues="\u5c45\u5bb6\u98ce">\u5c45\u5bb6\u98ce</value>
+            <value altvalues="\u4f11\u95f2">\u4f11\u95f2</value>
+            <value altvalues="\u6b63\u88c5,\u897f\u88c5,\u897f\u670d,\u793c\u670d">\u5546\u52a1</value>
+        </values>
+    </field>
+</etl>
